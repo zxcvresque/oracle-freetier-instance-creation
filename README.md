@@ -6,14 +6,14 @@
 
 <p align="center">
   <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm"><img src="https://img.shields.io/badge/OCI-Always_Free-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="OCI Always Free"></a>
-  <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm"><img src="https://img.shields.io/badge/Ampere_A1-Up_to_4_OCPU_%2F_24_GB-2E7D32?style=for-the-badge" alt="Ampere A1 up to 4 OCPU and 24 GB"></a>
+  <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm"><img src="https://img.shields.io/badge/Ampere_A1-Up_to_2_OCPU_%2F_12_GB-2E7D32?style=for-the-badge" alt="Ampere A1 up to 4 OCPU and 24 GB"></a>
   <img src="https://img.shields.io/badge/Default-2_OCPU_%2F_12_GB-1565C0?style=for-the-badge" alt="Default target: 2 OCPU and 12 GB">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/zxcvresque/oracle-freetier-instance-creation?style=for-the-badge" alt="License"></a>
 </p>
 
 Automates repeated Oracle Cloud Infrastructure instance launch attempts until capacity becomes available.
 
-> **Free Tier capacity:** Oracle currently documents up to **4 Ampere A1 OCPUs and 24 GB of memory total** across A1 instances in an Always Free tenancy. This project's updated default request is **2 OCPUs and 12 GB RAM**, leaving half of that allowance available for another instance. See [Oracle OCI Free Tier documentation](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm) and the [Oracle Cloud Free Tier page](https://www.oracle.com/cloud/free/).
+> **Free Tier capacity:** Oracle currently documents up to **4 Ampere A1 OCPUs and 24 GB of memory total** across A1 instances in an Always Free tenancy. This project's updated default request is **2 OCPUs and 12 GB RAM**, because of a discrepancy with recent news related to new Free Tier limits for A1 instance capacities. See [Oracle OCI Free Tier documentation](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm) and the [Oracle Cloud Free Tier page](https://www.oracle.com/cloud/free/).
 
 The supported targets are:
 
