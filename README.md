@@ -6,8 +6,9 @@
 
 <p align="center">
   <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm"><img src="https://img.shields.io/badge/OCI-Always_Free-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="OCI Always Free"></a>
-  <a href="https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm"><img src="https://img.shields.io/badge/Ampere_A1-Up_to_2_OCPU_%2F_12_GB-2E7D32?style=for-the-badge" alt="Ampere A1 up to 4 OCPU and 24 GB"></a>
-  <img src="https://img.shields.io/badge/Default-2_OCPU_%2F_12_GB-1565C0?style=for-the-badge" alt="Default target: 2 OCPU and 12 GB">
+  <a href="https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"><img src="https://img.shields.io/badge/OCI_ARM_Shape-VM.Standard.A1.Flex-2E7D32?style=for-the-badge" alt="OCI ARM shape: VM.Standard.A1.Flex"></a>
+  <img src="https://img.shields.io/badge/Target-2_OCPU_%2F_12_GB-1565C0?style=for-the-badge" alt="Target: 2 OCPU and 12 GB">
+  <img src="https://img.shields.io/badge/Notifications-Telegram_%7C_Discord_%7C_Email-7B1FA2?style=for-the-badge" alt="Notifications: Telegram, Discord, and Email">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/zxcvresque/oracle-freetier-instance-creation?style=for-the-badge" alt="License"></a>
 </p>
 
@@ -255,13 +256,18 @@ Configure them in `oci.env`:
 
 ```env
 TELEGRAM_LOGS_ENABLED=True
-TELEGRAM_LOG_GROUP_ID=-1001234567890
+TELEGRAM_LOG_GROUP_ID=-100xxxxxxxxxx
 TELEGRAM_LOG_INTERVAL_SECS=60
-TELEGRAM_LOG_TOPIC_LAUNCH_INSTANCE=6
-TELEGRAM_LOG_TOPIC_ERRORS=7
+TELEGRAM_LOG_TOPIC_LAUNCH_INSTANCE=xxxxx
+TELEGRAM_LOG_TOPIC_ERRORS=xxxxx
 ```
 
-To find a topic ID, send a message inside that topic and request:
+To find IDs using `@MissRose_bot`:
+
+- Add `@MissRose_bot` to the group and run `/id` inside a topic to get its topic ID.
+- Run `/id` in the group's **General** topic to get the group ID.
+
+Alternatively, send a message inside the topic and request:
 
 ```bash
 curl "https://api.telegram.org/bot<TELEGRAM_TOKEN>/getUpdates"
