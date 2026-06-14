@@ -9,7 +9,7 @@
 </div>
 
 
-This project provides Python and shell scripts to automate the creation of Oracle Free Tier ARM instances (4 OCPU, 24 GB RAM) or the Oracle Free Tier AMD instance (1 OCPU, 1 GB RAM) with minimal manual intervention. Acquiring resources in certain availability domains can be challenging due to high demand, and repeatedly attempting creation through the Oracle console is impractical. While other methods like OCI CLI and PHP are available (linked at the end), this solution aims to streamline the process by implementing it in Python.
+This project provides Python and shell scripts to automate the creation of Oracle Free Tier ARM instances (2 OCPU, 12 GB RAM) or the Oracle Free Tier AMD instance (1 OCPU, 1 GB RAM) with minimal manual intervention. Acquiring resources in certain availability domains can be challenging due to high demand, and repeatedly attempting creation through the Oracle console is impractical. While other methods like OCI CLI and PHP are available (linked at the end), this solution aims to streamline the process by implementing it in Python.
 
 The script attempts to create an instance every 60 seconds or as per the `REQUEST_WAIT_TIME_SECS` variable specified in the `oci.env` file until the instance is successfully created. Upon completion, a file named `INSTANCE_CREATED` is generated in the project directory, containing details about the newly created instance. Additionally, you can configure the script to send a Gmail notification upon instance creation.
 
